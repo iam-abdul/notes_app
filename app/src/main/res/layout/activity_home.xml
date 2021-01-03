@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#f9fcff"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/fontt"
+        android:text="Home"
+        android:textColor="#22ade8"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#728086"/>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/swipeup"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="3dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+
+                android:layout_marginRight="3dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/llayout"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"></LinearLayout>
+
+            </ScrollView>
+
+            <com.scalified.fab.ActionButton
+                android:id="@+id/action_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:layout_marginBottom="@dimen/fab_margin"
+
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                app:button_color="#22ADE8"
+                app:button_colorPressed="#053D55"
+                app:button_colorRipple="@color/white"
+                app:hide_animation="@anim/fab_roll_to_down"
+                app:image="@drawable/fab_plus_icon"
+                app:image_size="35dp"
+                app:rippleEffect_enabled="false"
+                app:shadowResponsiveEffect_enabled="true"
+                app:shadow_color="#757575"
+                app:shadow_radius="1.0dp"
+                app:shadow_xOffset="0.5dp"
+                app:shadow_yOffset="1.0dp"
+
+                app:show_animation="@anim/fab_roll_from_down"
+                app:stroke_color="@color/fab_material_blue_grey_500"
+                app:stroke_width="1.0dp"
+                app:type="DEFAULT" />
+        </RelativeLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

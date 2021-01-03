@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#f9fcff"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/fontt"
+        android:text="Add Note"
+        android:textColor="#22ade8"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#728086"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleofnote"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="10dp"
+        android:hint=" Title"
+        android:padding="10dp"
+        android:background="@drawable/edit_text_back"
+        android:layout_marginRight="10dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/details"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:hint=" Details"
+        android:gravity="top"
+        android:padding="10dp"
+        android:background="@drawable/edit_text_back"
+        android:layout_marginRight="10dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addphoto"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="ADD PHOTOS"
+        android:textColor="#22ade8"
+        android:fontFamily="@font/fontt"
+        android:textSize="18sp"
+        android:background="@drawable/button_back2"
+        />
+
+
+    <View
+        android:layout_width="240dp"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="#728086"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addnote"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="ADD NOTE"
+        android:fontFamily="@font/fontt"
+        android:textSize="18sp"
+        android:background="@drawable/button_back"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:visibility="invisible"
+        android:layout_margin="15dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+</LinearLayout>
